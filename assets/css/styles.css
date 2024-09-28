@@ -1,0 +1,55 @@
+:root {
+    --clr-white: hsl(30, 54%, 90%);
+    --clr-stone100: hsl(30, 18%, 87%);
+    --clr-stone600: hsl(30, 10%, 34%);
+    --clr-stone000: hsl(24, 5%, 18%);
+    --clr-brown800: hsl(14, 45%, 36%);
+    --clr-rose800: hsl(332, 51%, 32%);
+    --clr-rose50: hsl(330, 100%, 98%);
+
+    --fs-body: 16px;
+
+    --ff-young-serif: "Young-serif";
+    --ff-outfit: "Outfit";
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    --mobile: 375px;
+    --desktop: 1440px;
+}
+
+@font-face {
+    font-family: "Young-serif";
+    src: url("../fonts/young-serif/YoungSerif-Regular.ttf") format("truetype"),
+    url("../fonts/young-serif/YoungSerif-Regular.woff2") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype"),
+    url("../fonts/outfit/Outfit-VariableFont_wght.woff2") format("woff");
+    font-display: swap;
+}
+
+body {
+    font-family: var(--ff-outfit);
+    font-size: var(--fs-body);
+    max-height: 100vh;
+}
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
