@@ -1,7 +1,7 @@
 :root {
   --clr-white: hsl(0, 0%, 99%);
   --clr-black: hsl(0, 0%, 0%);
-  --clr-grey: rgba(170, 168, 168, 0.437);
+  --clr-grey: rgba(170, 168, 168, 0.283);
   --clr-stone100: hsl(30, 18%, 87%);
   --clr-stone600: hsl(30, 10%, 34%);
   --clr-stone000: hsl(24, 5%, 18%);
@@ -48,7 +48,7 @@
 }
 
 .container {
-  padding: 1.1rem;
+  padding: 1.2rem;
 }
 
 .image-recipe__img {
@@ -111,7 +111,8 @@ p,
 
 .unorder-list__li::marker,
 .unorder-list,
-.order-list {
+.order-list,
+.instructions-item__li::marker {
   color: var(--clr-rose800);
 }
 
@@ -137,8 +138,9 @@ p,
 }
 
 hr {
-    border-bottom: 1px solid var(--clr-grey);
-    width: 95%;
+    border-bottom: .5px solid var(--clr-grey);
+    opacity: .2;
+    /* width: 90%; */
 }
 
 .ingredients-container,
@@ -161,13 +163,14 @@ hr {
 
 
 .instructions-item__li span {
-    font-weight: var(--fw-700);
+    font-weight: var(--fw-400);
     color: var(--clr-black);
 }
 
 .nutrition-table {
   display: grid;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .nutrition-table-row {
@@ -176,9 +179,18 @@ hr {
   border-bottom: .1rem solid var(--clr-grey);
 }
 
+.nutrition-table-row:last-child {
+  border-bottom: none;
+}
+
 .col-description,
 .col-quantity {
   width: 40%;
+}
+
+.col-quantity {
+  color: var(--clr-brown800);
+  font-weight: var(--fw-700);
 }
 /* 
 .attribution { 
