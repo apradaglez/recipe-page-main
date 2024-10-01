@@ -48,7 +48,7 @@
 }
 
 .container {
-  padding: .5rem;
+  padding: 2rem;
 }
 
 .image-recipe__img {
@@ -68,16 +68,19 @@
 }
 
 p,
-.recipe-resume__p {
+.recipe-resume__p,
+.nutrition-container__p {
   font-family: var(--ff-outfit);
-  font-size: 1.1rem;
   font-weight: var(--fw-400);
   font-weight: lighter;
   line-height: 1.6;
 }
 
+.nutrition-container__p {
+  margin: .2em 0;
+}
+
 .time-to-cook__article {
-  width: 95%;
   margin: 0 auto;
   background-color: var(--clr-rose50);
   padding: 1.2rem 1rem;
@@ -111,11 +114,13 @@ p,
 .unorder-list__li::marker,
 .unorder-list,
 .order-list,
-.instructions-item__li::marker {
+.instructions-item__li::marker,
+.ingredients-item__li::marker {
   color: var(--clr-rose800);
 }
 
-.unorder-list__li {
+.unorder-list__li,
+.ingredients-item__li {
   margin: 0.5rem 0;
   color: var(--clr-black);
 }
@@ -139,7 +144,6 @@ p,
 hr {
   border-bottom: 0.5px solid var(--clr-grey);
   opacity: 0.2;
-  /* width: 90%; */
 }
 
 .ingredients-container,
@@ -152,7 +156,7 @@ hr {
   list-style-type: decimal;
   margin-left: -1rem;
   list-style-position: outside;
-  padding-right: 1.5em;
+  padding-right: .4em;
 }
 
 .instructions-item__li {
@@ -213,12 +217,12 @@ hr {
 
 
   .container {
-    padding-top: 2.5rem;
+    padding-top: 2.5rem 0 0 0;
   }
   
 
   .wrapp {
-    width: clamp(42rem, 42% + 2rem, 42rem);
+    width: clamp(20rem, 90% + 2rem, 40rem);
     margin-inline: auto;
     padding: 2rem;
     border-radius: 1.3rem;
