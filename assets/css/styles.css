@@ -48,7 +48,7 @@
 }
 
 .container {
-  padding: 1.2rem;
+  padding: .5rem;
 }
 
 .image-recipe__img {
@@ -81,7 +81,6 @@ p,
   margin: 0 auto;
   background-color: var(--clr-rose50);
   padding: 1.2rem 1rem;
-  /* margin: 2rem 0; */
   border-radius: 0.8rem;
   -webkit-border-radius: 0.8rem;
   -moz-border-radius: 0.8rem;
@@ -117,7 +116,7 @@ p,
 }
 
 .unorder-list__li {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   color: var(--clr-black);
 }
 
@@ -128,43 +127,42 @@ p,
 }
 
 .title__h2 {
-    color: var(--clr-brown800);
-    font-size: 1.8rem;
+  color: var(--clr-brown800);
+  font-size: 1.8rem;
 }
 
 .ingredients-item__li p {
-    color: var(--clr-black);
-    margin-left: 1rem;
+  color: var(--clr-black);
+  margin-left: 1rem;
 }
 
 hr {
-    border-bottom: .5px solid var(--clr-grey);
-    opacity: .2;
-    /* width: 90%; */
+  border-bottom: 0.5px solid var(--clr-grey);
+  opacity: 0.2;
+  /* width: 90%; */
 }
 
 .ingredients-container,
 .ingredients-instructions-container,
 .nutrition-container {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .order-list {
-    list-style-type: decimal;
-    margin-left: -1rem;
-    list-style-position: outside;
-    padding-right: 2.5em;
+  list-style-type: decimal;
+  margin-left: -1rem;
+  list-style-position: outside;
+  padding-right: 1.5em;
 }
 
 .instructions-item__li {
-    color: var(--clr-black);
-    padding-left: 1.25rem;
-} 
-
+  color: var(--clr-black);
+  padding-left: 1.25rem;
+}
 
 .instructions-item__li span {
-    font-weight: var(--fw-400);
-    color: var(--clr-black);
+  font-weight: var(--fw-400);
+  color: var(--clr-black);
 }
 
 .nutrition-table {
@@ -176,16 +174,20 @@ hr {
 .nutrition-table-row {
   display: flex;
   justify-content: center;
-  border-bottom: .1rem solid var(--clr-grey);
+  border-bottom: 0.1rem solid var(--clr-grey);
 }
 
 .nutrition-table-row:last-child {
   border-bottom: none;
 }
 
+.col-description p {
+  margin-left: 2em;
+}
+
 .col-description,
 .col-quantity {
-  width: 40%;
+  width: 50%;
 }
 
 .col-quantity {
@@ -200,58 +202,62 @@ hr {
     color: hsl(228, 45%, 44%); 
 } */
 
-/* 
 
-
-@media (width >= 375px) {
-
-    .body {    
-        display: grid;
-        place-content: center;
-    }
-
-
-    .wrapp {
-        width: max(23.44em, 35%);
-        margin-inline: auto;
-        padding: 2rem;
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
-        -webkit-border-radius: 1;
-}
-
-    .image-recipe__img {
-        width: 100%;
-        margin-bottom: 2rem;
-        border-radius: .6rem;
-        -webkit-border-radius: .6rem;
-        -moz-border-radius: .6rem;
-        -ms-border-radius: .6rem;
-        -o-border-radius: .6rem;
-} 
-
-    .container {
-        padding: 0;
-    }
-
-
-}  */
-
-@media ( width > 23.44rem ) {
+@media (width > 23.44rem) {
 
   .body {
-    background-color: red;
-    height: 100vh;
-    width: 100vw;
+    display: grid;
+    place-content: center;
+    background-color: var(--clr-stone100);
   }
+
+
+  .container {
+    padding-top: 2.5rem;
+  }
+  
 
   .wrapp {
-    width: clamp(21rem, 10% + 2rem, 33%);
+    width: clamp(42rem, 42% + 2rem, 42rem);
     margin-inline: auto;
-
+    padding: 2rem;
+    border-radius: 1.3rem;
+    -webkit-border-radius: 1.3rem;
+    -moz-border-radius: 1.3rem;
+    -ms-border-radius: 1.3rem;
+    -o-border-radius: 1.3rem;
   }
 
+  .image-recipe__img {
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+  }
+
+  p,
+  .recipe-resume__p {
+    font-family: var(--ff-outfit);
+    font-size: .9rem;
+    font-weight: var(--fw-400);
+    font-weight: lighter;
+    line-height: 1.4;
+  }
+
+  .time-to-cook__article,
+  .ingredients-container,
+  .ingredients-instructions-container,
+  .nutrition-container {
+    margin: 1.5rem 0;
+  }
+
+  .ingredients-item__li,
+  .instructions-item__li {
+    margin-bottom: .5rem;
+  }
+
+  .ingredients-item__li:first-child {
+    margin-top: 1rem;
+  }
 }
