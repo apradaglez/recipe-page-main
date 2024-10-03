@@ -42,9 +42,10 @@ body {
   font-family: var(--ff-outfit);
   font-size: var(--fs-body);
   background-color: var(--clr-body);
-  display: grid;
-  place-content: center;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150vh;
 }
 
 .wrapp {
@@ -178,6 +179,11 @@ hr {
 }
 
 @media ( max-width: 23.4375rem ) {
+
+  body {
+    min-height: 100vh;
+  }
+
   .wrapp {
     width: 100vw;
     padding: 0rem;
